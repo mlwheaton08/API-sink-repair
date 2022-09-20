@@ -1,0 +1,26 @@
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+
+#submitRequest {
+    border-radius: none;
+    padding: 7px 10px;
+    margin: 20px 0;
+    font-size: 1.3em;
+    color: white;
+    background-color: rgb(172, 16, 16);
+}
+
+#submitRequest:hover {
+    background-color: rgb(196, 23, 23);
+    box-shadow: 2px 2px 5px rgb(172, 171, 171);
+}
+
+#submitRequest:active {
+    box-shadow: inset 2px 1px 2px black;
+    padding: 8px 8px 6px 12px;
+}
