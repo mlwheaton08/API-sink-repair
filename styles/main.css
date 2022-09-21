@@ -19,3 +19,47 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 2px;
 }
 
+.requestsList {
+	list-style: none;
+}
+
+.requestListHeaders {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 700px;
+	padding: 3px 10px;
+	border: 1px solid rgb(88, 72, 72);
+	background-color: rgb(216, 193, 186);
+	font-size: 16px;
+}
+
+#listHeader2 {
+	margin-right: 55px;
+}
+
+.request {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 700px;
+	padding: 3px 10px;
+	border: 1px solid rgb(88, 72, 72);
+	border-top: none;
+}
+
+.noBullet {
+	list-style: none;
+}
+
+.complete {
+	background-color: rgb(255, 151, 151);
+}
+
+.description {
+	flex-grow: 2;
+}
+
+.middleItem {
+	margin-right: 20px;
+}

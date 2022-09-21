@@ -4,7 +4,7 @@ const applicationState = {
     completions: []
 }
 
-const API = "http://localhost:8088"
+const API = "http://localhost:8080"
 
 export const fetchRequests = async () => {
   const dataFetch = await fetch(`${API}/requests`);
@@ -62,5 +62,9 @@ export const saveCompletion = (completion) => {
 export const fetchCompletions = async () => {
     const dataFetch = await fetch(`${API}/completions`);
     const data = await dataFetch.json();
-    return data;
+    applicationState.completions = data;
+}
+
+export const getCompletions = () => {
+    return applicationState.completions.map(completion => ({...completion}));
 }
